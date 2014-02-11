@@ -96,7 +96,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 ### Verify setup
 12. `sudo reboot` (Wait 1 minute)
 13. Verify all is up and running
-	1. http://[ip]:8081 Sickbeard
-    2. http://[ip]:8083 Sabnzbd
-    3. http://[ip]:5050 Couchpotato
+	1. http://[ip]:8081 - Sickbeard
+    2. http://[ip]:8083 - Sabnzbd
+    3. http://[ip]:5050 - Couchpotato
     
