@@ -26,6 +26,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
     	1. Allow XBMC to receive AirPlay   ... [ENABLE]
 6. Programs -> Raspbmc Settings -> System Configuration
 	1. Disable unsafe shut down warning    ... [ENABLE]
+
 ### Downloader Installs
 ---
 7. System -> System Info
