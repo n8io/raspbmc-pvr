@@ -94,6 +94,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 19. Couchpotato installation complete.
 
 ### Verify setup
+---
 12. Via ssh window...
 	1. `sudo reboot` (Wait 1 minute)
 13. Via pc open the following in a browser...
