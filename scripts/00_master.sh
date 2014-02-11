@@ -1,1 +1,0 @@
-wget -o https://raw2.github.com/n8io/raspbmc-pvr/master/scripts/001_update_pi.sh | bash
