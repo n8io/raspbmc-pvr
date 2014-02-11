@@ -3,7 +3,7 @@ raspbmc-pvr
 
 A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in theory all you have to do is run the setup and answer a few prompts to have everything ready to run.
 
-#### Already got your version of Raspbmc installed, setup, and configured? Skip to step 7.
+#### Already got your version of Raspbmc installed, setup, and configured? Skip to [Downloader Installs](#dlinstalls).
 
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
 2. Plug in your pi
@@ -27,8 +27,7 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 `
 
 ----
-`
-
+##[dlinstalls] Downloader Installs
 7. System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine over your LAN. 
