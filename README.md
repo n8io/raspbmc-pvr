@@ -3,9 +3,8 @@ raspbmc-pvr
 
 A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in theory all you have to do is run the setup and answer a few prompts to have everything ready to run.
 
-#### Already got your version of Raspbmc installed, setup, and configured? Skip to [Downloader Installs](#downloader-installs).
-
 ### Raspbmc Install
+Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
 2. Plug in your pi
 	1. Insert SD card.
