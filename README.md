@@ -24,8 +24,8 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
     	1. Allow XBMC to receive AirPlay   ... [ENABLE]
 6. Programs -> Raspbmc Settings -> System Configuration
 	1. Disable unsafe shut down warning    ... [ENABLE]
-`
 
+----
 ###Downloader Installs
 7. System -> System Info
 	1. Make note of your IP address. This will be needed further down
