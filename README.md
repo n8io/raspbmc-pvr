@@ -40,7 +40,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 9. Via ssh window
 	1. `sudo apt-get update -y`
     2. Wait ~5-10min to complete.
-10. Sickbeard installation (via ssh window) _skip if not needed_
+#### Sickbeard installation (via ssh window)
     1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
     2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
     3. `sudo nano /etc/rc.local`
@@ -51,7 +51,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
     7. Hit y
     8. Hit Enter
     9. Sickbeard installation complete.
-11. Sabnzbd installation (via ssh window) _skip if not needed_
+#### Sabnzbd installation (via ssh window)
 	1. `sudo apt-get install sabnzbdplus`
     2. `sudo nano /etc/default/sabnzbdplus`
     3. The above command opens the sabnzbdplus file in a command line file editor called nano.
@@ -63,7 +63,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
     6. Hit y
     7. Hit Enter
     8. Sabnzbd installation complete.
-11. Couchpotato installation (via ssh window) _skip if not needed_
+#### Couchpotato installation (via ssh window)
 	1. `git config --global http.sslVerify false`
     2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
     3. `python .couchpotato/CouchPotato.py`
