@@ -27,7 +27,8 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 `
 
 ----
-##[dlinstalls] Downloader Installs
+[dlinstalls]
+## Downloader Installs
 7. System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine over your LAN. 
