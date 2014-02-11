@@ -1,7 +1,7 @@
 raspbmc-pvr
 ===========
 
-A bolt on process for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. Note that this procedure _properly installs all the apps_ from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
+A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Again, this procedure only **installs** all the apps from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
 
 ### Raspbmc Install
 ---
