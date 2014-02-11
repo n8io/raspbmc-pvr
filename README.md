@@ -41,7 +41,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 	1. `sudo apt-get update -y`
     2. Wait ~5-10min to complete.
     
-#### Sickbeard installation (via ssh window)
+#### Sickbeard installation (via ssh window) [skip](#sabnzbd-installation-via-ssh-window)
 1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
 2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
 3. `sudo nano /etc/rc.local`
@@ -53,7 +53,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 8. Hit Enter
 9. Sickbeard installation complete.
     
-#### Sabnzbd installation (via ssh window)
+#### Sabnzbd installation (via ssh window) [skip](#couchpotato-installation-via-ssh-window)
 1. `sudo apt-get install sabnzbdplus`
 2. `sudo nano /etc/default/sabnzbdplus`
 3. The above command opens the sabnzbdplus file in a command line file editor called nano.
