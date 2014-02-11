@@ -4,6 +4,7 @@ raspbmc-pvr
 A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in theory all you have to do is run the setup and answer a few prompts to have everything ready to run.
 
 ### Raspbmc Install
+---
 Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
@@ -25,9 +26,8 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
     	1. Allow XBMC to receive AirPlay   ... [ENABLE]
 6. Programs -> Raspbmc Settings -> System Configuration
 	1. Disable unsafe shut down warning    ... [ENABLE]
-
-----
 ### Downloader Installs
+---
 7. System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine over your LAN. 
