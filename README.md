@@ -53,7 +53,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 8. Hit Enter
 9. Sickbeard installation complete.
     
-#### Sabnzbd installation (via ssh window) [skip](#couchpotato-installation-via-ssh-window)
+#### Sabnzbd installation (via ssh window) [skip](#couchpotato-installation-via-ssh-window-skip)
 1. `sudo apt-get install sabnzbdplus`
 2. `sudo nano /etc/default/sabnzbdplus`
 3. The above command opens the sabnzbdplus file in a command line file editor called nano.
