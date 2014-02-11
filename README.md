@@ -35,22 +35,22 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 9. Via ssh window
 	1. `sudo apt-get update -y`
     2. Wait ~5-10min to complete.
-10. Sickbeard installation
+10. Sickbeard installation (via ssh window) _skip if not needed_
     1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
     2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
     3. `sudo nano /etc/rc.local`
     4. The above command opens the rc.local file in a command line file editor called nano.
-    5. From there, you should enter the following line above the line starting with `exit 0`:
+    5. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
     	1. `python /home/pi/.sickbeard/SickBeard.py -d`
     6. Hit Ctrl+X
     7. Hit y
     8. Hit Enter
     9. Sickbeard installation complete.
-11. Sabnzbd installation (via ssh window)
+11. Sabnzbd installation (via ssh window) _skip if not needed_
 	1. `sudo apt-get install sabnzbdplus`
     2. `sudo nano /etc/default/sabnzbdplus`
     3. The above command opens the sabnzbdplus file in a command line file editor called nano.
-    4. Update with the following:
+    4. Update to match the following...
     	1. `USER=pi`
         2. `HOST=0.0.0.0`
     	3. `PORT=8083`
@@ -58,15 +58,15 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
     6. Hit y
     7. Hit Enter
     8. Sabnzbd installation complete.
-11. Couchpotato installation (via ssh window)
+11. Couchpotato installation (via ssh window) _skip if not needed_
 	1. `git config --global http.sslVerify false`
     2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
-    3. `python .couchpotato/CouchPotato.py'
+    3. `python .couchpotato/CouchPotato.py`
     3. `sudo cp .couchpotato/init/ubuntu /etc/init.d/couchpotato`    
     4. `mkdir .couchpotato/data && mkdir .couchpotato/run`
     5. `sudo nano /etc/init.d/couchpotato`
     6. The above command opens the couchpotato file in a command line file editor called nano.
-    7. Update with the following:
+    7. Update to match the following...
     	1. `RUN_AS=${CP_USER-pi}`
         2. `APP_PATH=${CP_HOME-/home/pi/.couchpotato/}`
         3. `DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}`
@@ -74,5 +74,19 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
     8. Hit Ctrl+X
     9. Hit y
     10. Hit Enter    
-    11. Couchpotato installation complete.
+    11. `sudo chmod +x /etc/init.d/couchpotato`
+    12. `sudo update-rc.d couchpotato defaults`
+    13. `sudo nano /etc/rc.local`
+    14. The above command opens the rc.local file in a command line file editor called nano.
+    15. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
+    	1. `sudo service sabnzbdplus start &`
+    16. Hit Ctrl+X
+    17. Hit y
+    18. Hit Enter
+    19. Couchpotato installation complete.
+12. `sudo reboot` (Wait 1 minute)
+13. Verify all is up and running
+	1. http://[ip]:8081 Sickbeard
+    2. http://[ip]:8083 Sabnzbd
+    3. http://[ip]:5050 Couchpotato
     
