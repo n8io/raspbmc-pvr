@@ -101,4 +101,13 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 	1. http://[ip]:8081 - Sickbeard
     2. http://[ip]:8083 - Sabnzbd
     3. http://[ip]:5050 - Couchpotato
+
+### Mount External USB drives (via ssh window)
+14. Plug in USB drive
+15. `sudo fdisk -l`
+	1. The above command will list out your drives
+    2. You should see `sda1` or `sdb1` depending on how many drives you have connected.
+    3. For the purposes of this tutorial, we are assuming you only have 1 usb external drive connected.
+16. Format the drive
+	1. [Follow these directions](http://www.pendrivelinux.com/restoring-your-usb-key-partition/)
     
