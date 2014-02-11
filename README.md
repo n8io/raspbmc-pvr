@@ -3,7 +3,7 @@ raspbmc-pvr
 
 A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in theory all you have to do is run the setup and answer a few prompts to have everything ready to run.
 
-#### Already got your version of Raspbmc installed, setup, and configured. Skip to step 7.
+#### Already got your version of Raspbmc installed, setup, and configured? Skip to step 7.
 
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
 2. Plug in your pi
@@ -32,4 +32,7 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 	2. The default username is: _pi_
     3. The default password is: _raspberry_
     4. If this is the first time you have ssh'ed into your pi, it will prompt you for some one time setup. Follow the prompts and answer accordingly.
-9. 
+9. In the ssh window:
+	1. `sudo apt-get update -y`
+    2. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
+    3. `git clone git://github.com/mr-orange/Sick-Beard.git .sickbeard`
