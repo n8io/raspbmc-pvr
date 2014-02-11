@@ -5,6 +5,7 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 
 #### Already got your version of Raspbmc installed, setup, and configured? Skip to [Downloader Installs](#downloader-installs).
 
+### Raspbmc Install
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
 2. Plug in your pi
 	1. Insert SD card.
@@ -26,7 +27,7 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 	1. Disable unsafe shut down warning    ... [ENABLE]
 
 ----
-###Downloader Installs
+### Downloader Installs
 7. System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine over your LAN. 
