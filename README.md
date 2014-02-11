@@ -32,7 +32,47 @@ A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in 
 	2. The default username is: _pi_
     3. The default password is: _raspberry_
     4. If this is the first time you have ssh'ed into your pi, it will prompt you for some one time setup. Follow the prompts and answer accordingly.
-9. In the ssh window:
+9. Via ssh window
 	1. `sudo apt-get update -y`
-    2. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
-    3. `git clone git://github.com/mr-orange/Sick-Beard.git .sickbeard`
+    2. Wait ~5-10min to complete.
+10. Sickbeard installation
+    1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
+    2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
+    3. `sudo nano /etc/rc.local`
+    4. The above command opens the rc.local file in a command line file editor called nano.
+    5. From there, you should enter the following line above the line starting with `exit 0`:
+    	1. `python /home/pi/.sickbeard/SickBeard.py -d`
+    6. Hit Ctrl+X
+    7. Hit y
+    8. Hit Enter
+    9. Sickbeard installation complete.
+11. Sabnzbd installation (via ssh window)
+	1. `sudo apt-get install sabnzbdplus`
+    2. `sudo nano /etc/default/sabnzbdplus`
+    3. The above command opens the sabnzbdplus file in a command line file editor called nano.
+    4. Update with the following:
+    	1. `USER=pi`
+        2. `HOST=0.0.0.0`
+    	3. `PORT=8083`
+    5. Hit Ctrl+X
+    6. Hit y
+    7. Hit Enter
+    8. Sabnzbd installation complete.
+11. Couchpotato installation (via ssh window)
+	1. `git config --global http.sslVerify false`
+    2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
+    3. `python .couchpotato/CouchPotato.py'
+    3. `sudo cp .couchpotato/init/ubuntu /etc/init.d/couchpotato`    
+    4. `mkdir .couchpotato/data && mkdir .couchpotato/run`
+    5. `sudo nano /etc/init.d/couchpotato`
+    6. The above command opens the couchpotato file in a command line file editor called nano.
+    7. Update with the following:
+    	1. `RUN_AS=${CP_USER-pi}`
+        2. `APP_PATH=${CP_HOME-/home/pi/.couchpotato/}`
+        3. `DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}`
+        4. `PID_FILE=${CP_PIDFILE-/home/pi/.couchpotato/run/couchpotato.pid}`
+    8. Hit Ctrl+X
+    9. Hit y
+    10. Hit Enter    
+    11. Couchpotato installation complete.
+    
