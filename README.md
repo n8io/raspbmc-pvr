@@ -58,9 +58,9 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 2. `sudo nano /etc/default/sabnzbdplus`
 3. The above command opens the sabnzbdplus file in a command line file editor called nano.
 4. Update to match the following...
-1. `USER=pi`
-2. `HOST=0.0.0.0`
-3. `PORT=8083`
+	1. `USER=pi`
+	2. `HOST=0.0.0.0`
+	3. `PORT=8083`
 5. Hit Ctrl+X
 6. Hit y
 7. Hit Enter
@@ -75,10 +75,10 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 5. `sudo nano /etc/init.d/couchpotato`
 6. The above command opens the couchpotato file in a command line file editor called nano.
 7. Update to match the following...
-1. `RUN_AS=${CP_USER-pi}`
-2. `APP_PATH=${CP_HOME-/home/pi/.couchpotato/}`
-3. `DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}`
-4. `PID_FILE=${CP_PIDFILE-/home/pi/.couchpotato/run/couchpotato.pid}`
+	1. `RUN_AS=${CP_USER-pi}`
+	2. `APP_PATH=${CP_HOME-/home/pi/.couchpotato/}`
+	3. `DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}`
+	4. `PID_FILE=${CP_PIDFILE-/home/pi/.couchpotato/run/couchpotato.pid}`
 8. Hit Ctrl+X
 9. Hit y
 10. Hit Enter    
@@ -87,7 +87,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 13. `sudo nano /etc/rc.local`
 14. The above command opens the rc.local file in a command line file editor called nano.
 15. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
-1. `sudo service sabnzbdplus start &`
+	1. `sudo service sabnzbdplus start &`
 16. Hit Ctrl+X
 17. Hit y
 18. Hit Enter
