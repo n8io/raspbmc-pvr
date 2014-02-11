@@ -1,7 +1,7 @@
 raspbmc-pvr
 ===========
 
-A sideload for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. So in theory all you have to do is run the setup and answer a few prompts to have everything ready to run.
+A bolt on process for Raspbmc that set's up Sabnzbd, Sickbeard, and Couchpotato. Note that this procedure _properly installs all the apps_ from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
 
 ### Raspbmc Install
 ---
@@ -96,7 +96,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 ### Verify setup
 ---
 12. Via ssh window...
-	1. `sudo reboot` (Wait 1 minute)
+	1. `sudo reboot` (wait 2 minutes for everything to cycle)
 13. Via pc open the following in a browser...
 	1. http://[ip]:8081 - Sickbeard
     2. http://[ip]:8083 - Sabnzbd
