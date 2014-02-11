@@ -1,0 +1,1 @@
+sudo apt-get update && sudo apt-get install python-cheetah git git-core transmission-daemon
