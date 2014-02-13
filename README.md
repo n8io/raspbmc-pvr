@@ -133,3 +133,7 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 8. Add the following lines replacing `XXXX` and `ZZZZ` with the values you noted above.
 	1. `UUID=XXXX /home/pi/usb_drives/share ext3 defaults,auto,umask=000,users,rw 0 0`
     2. `UUID=ZZZZ /home/pi/usb_drives/temp ext3 defaults,auto,umask=000,users,rw 0 0`
+    3. The above command opens the fstab file in a command line file editor called nano.
+    4. Hit Ctrl+X
+    5. Hit y
+    6. Hit Enter 
