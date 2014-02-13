@@ -153,3 +153,6 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     6. `available = yes`
     7. `create mask = 777`
     8. `directory mask = 777`
+6. Hit Ctrl+X
+7. Hit y
+8. Hit Enter 
