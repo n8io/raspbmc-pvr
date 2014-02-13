@@ -157,3 +157,5 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 7. Hit y
 8. Hit Enter 
 9. `sudo /etc/init.d/samba restart`
+10. `sudo update-rc.d -f samba remove`
+11. `sudo  update-rc.d samba defaults`
