@@ -124,12 +124,9 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 5. Create mount directories for each drive
 	1. `mkdir ~/usb_drives/share`
 	2. `mkdir ~/usb_drives/temp`
-6. Mount to verify
-	1. `sudo mount /dev/sda1 ~/usb_drives/share`
-    2. `sudo mount /dev/sdb1 ~/usb_drives/share`
-   	3. `mount`
-    4. This should list out your 2 mounted drives.
-7. Get the unique id for each drive
-	1. `blkid /dev/sda1`
-    2. Copy down the UUID value. Repeat step 1 for `sdb1`
-    3. 
+6. Get the unique id for each drive
+	1. `sudo blkid /dev/sda1 -t TYPE=ext3 -sUUID -ovalue`
+    2. Copy down the returned value.
+    3. `sudo blkid /dev/sdb1 -t TYPE=ext3 -sUUID -ovalue`
+    4. Copy down the returned value.
+7.
