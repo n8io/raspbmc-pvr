@@ -129,4 +129,7 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     2. `sudo mount /dev/sdb1 ~/usb_drives/share`
    	3. `mount`
     4. This should list out your 2 mounted drives.
-7. 
+7. Get the unique id for each drive
+	1. `blkid /dev/sda1`
+    2. Copy down the UUID value. Repeat step 1 for `sdb1`
+    3. 
