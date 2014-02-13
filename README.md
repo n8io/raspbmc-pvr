@@ -105,6 +105,9 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 ### Bonus
 ---
 #### Mount Two (2) External USB drives (via ssh window)
+
+You might ask, 'Why two drives?'. The answer is simple. If you are like me and have multiple media extenders setup around the house, you are going to want to share out your media. With two drives, this makes it easy for one drive to be dedicated to preprocessing, downloading, and post processing (writing) your media while the second is dedicated to streaming (reading) your media. It helps prevent juttering during playback while your pi processes downloaded media.
+
 1. Plug in both USB drives
 2. `sudo fdisk -l`
 	1. The above command will list out your drives
