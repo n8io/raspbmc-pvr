@@ -102,8 +102,10 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
     2. http://[ip]:8083 - Sabnzbd
     3. http://[ip]:5050 - Couchpotato
 
-### Mount Two (2) External USB drives (via ssh window)
-14. Plug in the USB drives
+### Bonus
+---
+#### Mount Two (2) External USB drives (via ssh window)
+14. Plug in both USB drives
 15. `sudo fdisk -l`
 	1. The above command will list out your drives
     2. You should see `sda1` and `sdb1`.
