@@ -128,8 +128,8 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 	1. `sudo blkid /dev/sda1 -t TYPE=ext3 -sUUID -ovalue`
     2. Copy down the returned value. For reference, we will refer to this valus as `XXXX`.
     3. `sudo blkid /dev/sdb1 -t TYPE=ext3 -sUUID -ovalue`
-    4. Copy down the returned value. For reference, we will refer to this value as 'ZZZZ'.
+    4. Copy down the returned value. For reference, we will refer to this value as `ZZZZ`.
 7. `sudo nano /etc/fstab`
-8. Add the following lines replacing XXXX and ZZZZ with the values you noted above.
+8. Add the following lines replacing `XXXX` and `ZZZZ` with the values you noted above.
 	1. `UUID=XXXX /home/pi/usb_drives/share ext3 defaults,auto,umask=000,users,rw 0 0`
     2. `UUID=ZZZZ /home/pi/usb_drives/temp ext3 defaults,auto,umask=000,users,rw 0 0`
