@@ -145,11 +145,11 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 3. `sudo nano /etc/samba/smb.conf`
 4. The above command opens the smb.conf file in a command line file editor called nano.
 5. At the end of the file enter the following lines...
-    `[share]`
-    `comment = Shared Folder`
-    `path = /home/pi/usb_drives/share`
-    `public = yes`
-    `writable = yes`
-    `available = yes`
-    `create mask = 777`
-    `directory mask = 777`
+    1. `[share]`
+    2. `comment = Shared Folder`
+    3. `path = /home/pi/usb_drives/share`
+    4. `public = yes`
+    5. `writable = yes`
+    6. `available = yes`
+    7. `create mask = 777`
+    8. `directory mask = 777`
