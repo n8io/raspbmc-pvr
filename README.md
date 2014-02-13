@@ -102,16 +102,21 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
     2. http://[ip]:8083 - Sabnzbd
     3. http://[ip]:5050 - Couchpotato
 
-### Mount External USB drives (via ssh window)
-14. Plug in USB drive
+### Mount Two (2) External USB drives (via ssh window)
+14. Plug in the USB drives
 15. `sudo fdisk -l`
 	1. The above command will list out your drives
-    2. You should see `sda1` or `sdb1` depending on how many drives you have connected.
-    3. For the purposes of this tutorial, we are assuming you want to mount 'sda1'
-16. Format the drive
+    2. You should see `sda1` and `sdb1`.
+    3. For the purposes of this tutorial, we are assuming you want to mount 'sda1' as the primary read drive.
+16. Format the drives
 	1. `sudo mkfs.ext3 /dev/sda1`
-    	1. You may be prompted, if so enter y, hit Enter.
-        2. Be patient, this may take a while (~5min for 1TB)
-    2. `mkdir usb_drives`
-    3. 
+    	1. This may take a while. (~5min for 1TB)
+    2. `sudo mkfs.ext3 /dev/sdb1`
+17. Unmount automounted drives
+	1. `sudo umount /dev/sda1`
+    2. `sudo umount /dev/sdb1`
+    3. Create mount directories for each...
+    	1. `mkdir ~/usb_drives/temp`
+        2. `mkdir ~/usb_drives/share`
+    4. 
     
