@@ -156,3 +156,4 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 6. Hit Ctrl+X
 7. Hit y
 8. Hit Enter 
+9. `sudo /etc/init.d/samba restart`
