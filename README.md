@@ -138,3 +138,18 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     3. Hit Ctrl+X
     4. Hit y
     5. Hit Enter 
+
+#### Share Two (2) External USB drives (via ssh window)
+1. `sudo apt-get install samba -y`
+2. `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
+3. `sudo nano /etc/samba/smb.conf`
+4. The above command opens the smb.conf file in a command line file editor called nano.
+5. At the end of the file enter the following lines...
+  [share]
+  comment = Shared Folder
+  path = /home/pi/usb_drives/share
+  public = yes
+  writable = yes
+  available = yes
+  create mask = 777
+  directory mask = 777
