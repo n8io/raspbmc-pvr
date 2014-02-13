@@ -108,15 +108,15 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 	1. The above command will list out your drives
     2. You should see `sda1` and `sdb1`.
     3. For the purposes of this tutorial, we are assuming you want to mount 'sda1' as the primary read drive.
-16. Format the drives
+16. Unmount automounted drives
+	1. `sudo umount /dev/sda1`
+    2. `sudo umount /dev/sdb1`
+17. Format the drives
 	1. `sudo mkfs.ext3 /dev/sda1`
     	1. This may take a while. (~5min for 1TB)
     2. `sudo mkfs.ext3 /dev/sdb1`
-17. Unmount automounted drives
-	1. `sudo umount /dev/sda1`
-    2. `sudo umount /dev/sdb1`
-    3. Create mount directories for each...
-    	1. `mkdir ~/usb_drives/temp`
-        2. `mkdir ~/usb_drives/share`
-    4. 
+17. Create mount directories for each drive
+	1. `mkdir ~/usb_drives/share`
+	2. `mkdir ~/usb_drives/temp`
+18.
     
