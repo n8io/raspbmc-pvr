@@ -95,9 +95,9 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 
 ### Verify setup
 ---
-12. Via ssh window...
+1. Via ssh window...
 	1. `sudo reboot` (wait 2 minutes for everything to cycle)
-13. Via pc open the following in a browser...
+2. Via pc open the following in a browser...
 	1. http://[ip]:8081 - Sickbeard
     2. http://[ip]:8083 - Sabnzbd
     3. http://[ip]:5050 - Couchpotato
@@ -105,20 +105,25 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 ### Bonus
 ---
 #### Mount Two (2) External USB drives (via ssh window)
-14. Plug in both USB drives
-15. `sudo fdisk -l`
+1. Plug in both USB drives
+2. `sudo fdisk -l`
 	1. The above command will list out your drives
     2. You should see `sda1` and `sdb1`.
     3. For the purposes of this tutorial, we are assuming you want to mount 'sda1' as the primary read drive.
-16. Unmount automounted drives
+3. Unmount automounted drives
 	1. `sudo umount /dev/sda1`
     2. `sudo umount /dev/sdb1`
-17. Format the drives
+4. Format the drives
 	1. `sudo mkfs.ext3 /dev/sda1`
     	1. This may take a while. (~5min for 1TB)
     2. `sudo mkfs.ext3 /dev/sdb1`
-17. Create mount directories for each drive
+		1. This may take a while. (~5min for 1TB)    
+5. Create mount directories for each drive
 	1. `mkdir ~/usb_drives/share`
 	2. `mkdir ~/usb_drives/temp`
-18.
-    
+6. Mount to verify
+	1. `sudo mount /dev/sda1 ~/usb_drives/share`
+    2. `sudo mount /dev/sdb1 ~/usb_drives/share`
+   	3. `mount`
+    4. This should list out your 2 mounted drives.
+7. 
