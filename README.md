@@ -218,4 +218,4 @@ _via ssh window_
 15. Type `\q`
 16. Hit Enter.
 
-*[top](#raspbmc-pvr)*
+*[back to top](#raspbmc-pvr)*
