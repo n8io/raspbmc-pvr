@@ -136,7 +136,7 @@ _via ssh window_
 2. `sudo fdisk -l`
 	1. The above command will list out your drives
     2. You should see `sda1` and `sdb1`.
-    3. For the purposes of this tutorial, we are assuming you want to mount 'sda1' as the primary read drive.
+    3. For the purposes of this tutorial, we are assuming you want to mount `sda1` as the primary read drive.
 3. Unmount automounted drives
 	1. `sudo umount /dev/sda1`
     2. `sudo umount /dev/sdb1`
