@@ -90,6 +90,8 @@ _via ssh window_
 8. Hit Enter
 9. Sickbeard installation complete.
 
+[More details on Sickbeard](http://sickbeard.com/)
+
 #### Couchpotato installation [skip](#verify-setup)
 _via ssh window_
 
@@ -118,6 +120,8 @@ _via ssh window_
 18. Hit y
 19. Hit Enter
 20. Couchpotato installation complete.
+
+[More details on Couchpotato](https://couchpota.to/)
 
 ### Verify setup
 ---
@@ -188,10 +192,10 @@ _via ssh window_
     [share]
     comment = Shared Folder
     path = /home/pi/usb_drives/share
-    public = yes
+    guest ok = yes
+    guest account = pi
     writable = yes
     available = yes
-    guest ok = yes
     create mask = 777
     directory mask = 777
     ```
