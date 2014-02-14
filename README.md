@@ -12,6 +12,7 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 - [Bonus](#bonus)
     - [Mount Two External USB drives](#mount-two-2-external-usb-drives)
     - [Network Share External USB drive](#network-share-external-usb-drive)
+    - [Shared XBMC Library](#shared-xbmc-library)
 
 ### Raspbmc Install
 ---
@@ -189,7 +190,7 @@ _via ssh window_
 10. `sudo update-rc.d -f samba remove`
 11. `sudo update-rc.d samba defaults`
 
-#### Share XBMC library
+#### Shared XBMC library
 _via ssh window_
 
 1. `sudo apt-get install mysql-server -y`
