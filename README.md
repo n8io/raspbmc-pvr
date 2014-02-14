@@ -28,7 +28,7 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
 4. Using the keyboard, finish any setup steps that you are prompted with.
 5. System -> Settings -> Services ->
 	1. UPnP
-    	1. Share video and music libraries ... `[ENABLE]`
+    	1. Share video and music libraries ... :large_blue_circle:
         2. Allow control of XBMC via UPnP  ... `[ENABLE]`
     2. Remote Control
     	1. Allow programs on other systems ... `[ENABLE]`
