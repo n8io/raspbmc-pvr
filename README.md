@@ -203,7 +203,7 @@ _via ssh window_
     2. Hit Enter.
     3. Re-enter `xbmc`
     4. Hit Enter.
-    5. Wait ~5min.
+    5. Wait ~5min to finish installing MySQL.
 3. `sudo nano /etc/mysql/my.cnf`
 4. The above command opens the my.conf file in a command line file editor called nano.
 5. Update to match the following lines...
