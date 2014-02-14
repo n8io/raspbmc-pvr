@@ -183,6 +183,7 @@ _via ssh window_
     public = yes
     writable = yes
     available = yes
+    guest ok = yes
     create mask = 777
     directory mask = 777
     ```
