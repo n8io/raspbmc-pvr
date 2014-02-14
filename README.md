@@ -218,8 +218,4 @@ _via ssh window_
 15. Type `\q`
 16. Hit Enter.
 
-
-
-99. [Read more on this here](http://wiki.xbmc.org/index.php?title=HOW-TO:Sync_multiple_libraries/Setting_up_MySQL#tab=Ubuntu_Linux)
-
 *[top](#raspbmc-pvr)*
