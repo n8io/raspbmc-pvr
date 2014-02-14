@@ -189,4 +189,36 @@ _via ssh window_
 10. `sudo update-rc.d -f samba remove`
 11. `sudo update-rc.d samba defaults`
 
+#### Share XBMC library
+_via ssh window_
+
+1. `sudo apt-get install mysql-server -y`
+2. You will be prompted to enter a MySQL "root" user pwd...
+	1. Type `xbmc` (note you will not see anything change on the prompt, input is hidden)
+    2. Hit Enter.
+    3. Re-enter `xbmc`
+    4. Hit Enter.
+    5. Wait ~5min.
+3. `sudo nano /etc/mysql/my.cnf`
+4. The above command opens the my.conf file in a command line file editor called nano.
+5. Update to match the following lines...
+	1. `bind-address = 0.0.0.0`
+6. Hit Ctrl+X
+7. Hit y
+8. Hit Enter 
+9. `sudo /etc/init.d/mysql start`
+10. `mysql -u root -p`
+11. You will be prompted Enter password:
+	1. Type `xbmc`
+    2. Hit Enter.
+12. You are now in an interactive MySQL session.
+13. `CREATE USER 'xbmc' IDENTIFIED BY 'xbmc';`
+14. `GRANT ALL ON *.* TO 'xbmc';`
+15. Type `\q`
+16. Hit Enter.
+
+
+
+99. [Read more on this here](http://wiki.xbmc.org/index.php?title=HOW-TO:Sync_multiple_libraries/Setting_up_MySQL#tab=Ubuntu_Linux)
+
 *[top](#raspbmc-pvr)*
