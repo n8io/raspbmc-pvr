@@ -37,7 +37,7 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
 6. Programs -> Raspbmc Settings -> System Configuration
 	1. Disable unsafe shut down warning    ... :large_blue_circle:
 
-:large_blue_circle: Enable | :white_circle: Disable
+:large_blue_circle: Enable :white_circle: Disable
 
 ### Downloader Installs
 ---
