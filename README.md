@@ -5,10 +5,10 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 
 - [Raspbmc Install](#raspbmc-install)
 - [Downloader Installs](#downloader-installs)
+    - [Sabnzbd](#sabnzbd-installation-skip)
     - [Sickbeard](#sickbeard-installation-skip)
     - [Couchpotato](#couchpotato-installation-skip)
-    - [Sabnzbd](#sabnzbd-installation-skip)
-    - [Install Verification](#verify-setup)
+- [Install Verification](#verify-setup)
 - [Bonus](#bonus)
     - [Mount Two External USB drives](#mount-two-2-external-usb-drives)
     - [Network Share Two External USB drives](#share-two-2-external-usb-drives)
