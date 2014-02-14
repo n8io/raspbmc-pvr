@@ -217,5 +217,29 @@ _via ssh window_
 14. `GRANT ALL ON *.* TO 'xbmc';`
 15. Type `\q`
 16. Hit Enter.
+17. `sudo nano ~/.xbmc/userdata/advancedsettings.xml`
+18. The above command opens the advancedsettings.xml file in a command line file editor called nano.
+19. Enter the following lines...
+	```xml
+    <advancedsettings>
+    <videodatabase>
+      <type>mysql</type>
+      <host>127.0.0.1</host>
+      <port>3306</port>
+      <user>xbmc</user>
+      <pass>xbmc</pass>
+    </videodatabase> 
+    <musicdatabase>
+      <type>mysql</type>
+      <host>127.0.0.1</host>
+      <port>3306</port>
+      <user>xbmc</user>
+      <pass>xbmc</pass>
+    </musicdatabase>
+    <videolibrary>
+      <importwatchedstate>true</importwatchedstate>
+    </videolibrary>
+</advancedsettings>
+    ```
 
 *[back to top](#raspbmc-pvr)*
