@@ -192,10 +192,13 @@ _via ssh window_
     [share]
     comment = Shared Folder
     path = /home/pi/usb_drives/share
+    public = yes
     guest ok = yes
     guest account = pi
-    browseable = yes
-    read only = no
+    writable = yes
+    available = yes
+    create mask = 777
+    directory mask = 777
     ```
 6. Hit Ctrl+X
 7. Hit y
