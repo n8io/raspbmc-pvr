@@ -50,8 +50,8 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 	1. `echo "deb-src http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi" | sudo tee -a /etc/apt/sources.list`
 	2. `sudo apt-get update -y`    
     3. Wait ~5-10min to complete.
-    4. `sudo apt-get build-dep unrar-nonfree`
-	5. `sudo apt-get source -b unrar-nonfree`
+    4. `sudo apt-get build-dep unrar-nonfree -y`
+	5. `sudo apt-get source -b unrar-nonfree -y`
 	6. `sudo dpkg -i unrar*.deb`
     
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
