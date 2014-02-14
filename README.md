@@ -194,10 +194,8 @@ _via ssh window_
     path = /home/pi/usb_drives/share
     guest ok = yes
     guest account = pi
-    writable = yes
-    available = yes
-    create mask = 777
-    directory mask = 777
+    browseable = yes
+    read only = no
     ```
 6. Hit Ctrl+X
 7. Hit y
