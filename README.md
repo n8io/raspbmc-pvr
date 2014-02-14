@@ -39,20 +39,21 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 
 ### Downloader Installs
 ---
-7. System -> System Info
+1. System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine over your LAN. 
-8. From your pc, [download and run](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) Putty ssh client.
+2. From your pc, [download and run](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) Putty ssh client.
 	1. When prompted, enter your pi IP address and click Open.
 	2. The default username is: _pi_
     3. The default password is: _raspberry_
     4. If this is the first time you have ssh'ed into your pi, it will prompt you for some one time setup. Follow the prompts and answer accordingly.
-9. Via ssh window
+3. Via ssh window
 	1. `sudo apt-get update -y`
     2. Wait ~5-10min to complete.
     
 #### Sabnzbd installation [skip](#couchpotato-installation)
 _via ssh window_
+
 1. `sudo apt-get install sabnzbdplus`
 2. `sudo nano /etc/default/sabnzbdplus`
 3. The above command opens the sabnzbdplus file in a command line file editor called nano.
@@ -67,6 +68,7 @@ _via ssh window_
     
 #### Sickbeard installation [skip](#sabnzbd-installation)
 _via ssh window_
+
 1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
 2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
 3. `sudo nano /etc/rc.local`
@@ -80,31 +82,32 @@ _via ssh window_
 
 #### Couchpotato installation [skip](#verify-setup)
 _via ssh window_
+
 1. `git config --global http.sslVerify false`
 2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
 3. `python .couchpotato/CouchPotato.py`
-3. `sudo cp .couchpotato/init/ubuntu /etc/init.d/couchpotato`    
-4. `mkdir .couchpotato/data && mkdir .couchpotato/run`
-5. `sudo nano /etc/init.d/couchpotato`
-6. The above command opens the couchpotato file in a command line file editor called nano.
-7. Update to match the following...
+4. `sudo cp .couchpotato/init/ubuntu /etc/init.d/couchpotato`    
+5. `mkdir .couchpotato/data && mkdir .couchpotato/run`
+6. `sudo nano /etc/init.d/couchpotato`
+7. The above command opens the couchpotato file in a command line file editor called nano.
+8. Update to match the following...
 	1. `RUN_AS=${CP_USER-pi}`
 	2. `APP_PATH=${CP_HOME-/home/pi/.couchpotato/}`
 	3. `DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}`
 	4. `PID_FILE=${CP_PIDFILE-/home/pi/.couchpotato/run/couchpotato.pid}`
-8. Hit Ctrl+X
-9. Hit y
-10. Hit Enter    
-11. `sudo chmod +x /etc/init.d/couchpotato`
-12. `sudo update-rc.d couchpotato defaults`
-13. `sudo nano /etc/rc.local`
-14. The above command opens the rc.local file in a command line file editor called nano.
-15. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
+9. Hit Ctrl+X
+10. Hit y
+11. Hit Enter    
+12. `sudo chmod +x /etc/init.d/couchpotato`
+13. `sudo update-rc.d couchpotato defaults`
+14. `sudo nano /etc/rc.local`
+15. The above command opens the rc.local file in a command line file editor called nano.
+16. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
 	1. `sudo service sabnzbdplus start &`
-16. Hit Ctrl+X
-17. Hit y
-18. Hit Enter
-19. Couchpotato installation complete.
+17. Hit Ctrl+X
+18. Hit y
+19. Hit Enter
+20. Couchpotato installation complete.
 
 ### Verify setup
 ---
@@ -122,6 +125,7 @@ _via ssh window_
 You might ask, 'Why two drives?'. The answer is simple. If you are like me and have multiple media extenders setup around the house, you are going to want to share out your media. With two drives, this makes it easy for one drive to be dedicated to preprocessing, downloading, and post processing (writing) your media while the second is dedicated to streaming (reading) your media. It helps prevent juttering during playback while your pi processes downloaded media.
 
 _via ssh window_
+
 1. Plug in both USB drives
 2. `sudo fdisk -l`
 	1. The above command will list out your drives
@@ -154,8 +158,8 @@ _via ssh window_
     5. Hit Enter 
 
 #### Share Two (2) External USB drives
-
 _via ssh window_
+
 1. `sudo apt-get install samba -y`
 2. `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 3. `sudo nano /etc/samba/smb.conf`
