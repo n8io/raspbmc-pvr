@@ -223,24 +223,24 @@ _via ssh window_
 
 	```xml
     <advancedsettings>
-    <videodatabase>
-      <type>mysql</type>
-      <host>127.0.0.1</host>
-      <port>3306</port>
-      <user>xbmc</user>
-      <pass>xbmc</pass>
-    </videodatabase> 
-    <musicdatabase>
-      <type>mysql</type>
-      <host>127.0.0.1</host>
-      <port>3306</port>
-      <user>xbmc</user>
-      <pass>xbmc</pass>
-    </musicdatabase>
-    <videolibrary>
-      <importwatchedstate>true</importwatchedstate>
-    </videolibrary>
-</advancedsettings>
+      <videodatabase>
+        <type>mysql</type>
+        <host>127.0.0.1</host>
+        <port>3306</port>
+        <user>xbmc</user>
+        <pass>xbmc</pass>
+      </videodatabase> 
+      <musicdatabase>
+        <type>mysql</type>
+        <host>127.0.0.1</host>
+        <port>3306</port>
+        <user>xbmc</user>
+        <pass>xbmc</pass>
+      </musicdatabase>
+      <videolibrary>
+        <importwatchedstate>true</importwatchedstate>
+      </videolibrary>
+    </advancedsettings>
     ```
 
 *[back to top](#raspbmc-pvr)*
