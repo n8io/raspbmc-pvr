@@ -176,8 +176,8 @@ _via ssh window_
 	2. `mkdir ~/usb_drives/share/music`
 	3. `mkdir ~/usb_drives/share/movies`
     4. `mkdir ~/usb_drives/temp/movies`
-13. Give full read/write access to `~/usb_drives/*`
-	1. `sudo chmod 777 -R ~/usb_drives`
+13. Give full read/write access to `~/usb_drives`
+	1. `sudo chmod -R a+rX ~/usb_drives`
 
 #### Network Share External USB drive
 _via ssh window_
