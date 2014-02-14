@@ -51,9 +51,9 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 	2. `sudo apt-get update -y`    
     3. Wait ~10min to complete.
     4. `sudo apt-get build-dep unrar-nonfree -y`  
-    5. Wait ~5min to complete.
+    5. Wait ~10min to complete.
 	6. `sudo apt-get source -b unrar-nonfree -y`  
-    7. Wait ~5min to complete.
+    7. Wait ~10min to complete.
 	6. `sudo dpkg -i unrar*.deb`
     
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
