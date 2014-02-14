@@ -1,7 +1,7 @@
 raspbmc-pvr
 ===========
 
-A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Again, this procedure only **installs** all the apps from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
+A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Again, this procedure only **installs** all the apps from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
 
 - [Raspbmc Install](#raspbmc-install)
 - [Downloader Installs](#downloader-installs)
@@ -28,14 +28,14 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 4. Using the keyboard, finish any setup steps that you are prompted with.
 5. System -> Settings -> Services ->
 	1. UPnP
-    	1. Share video and music libraries ... [ENABLE]
-        2. Allow control of XBMC via UPnP  ... [ENABLE]
+    	1. Share video and music libraries ... `[ENABLE]`
+        2. Allow control of XBMC via UPnP  ... `[ENABLE]`
     2. Remote Control
-    	1. Allow programs on other systems ... [ENABLE]
+    	1. Allow programs on other systems ... `[ENABLE]`
     3. AirPlay
-    	1. Allow XBMC to receive AirPlay   ... [ENABLE]
+    	1. Allow XBMC to receive AirPlay   ... `[ENABLE]`
 6. Programs -> Raspbmc Settings -> System Configuration
-	1. Disable unsafe shut down warning    ... [ENABLE]
+	1. Disable unsafe shut down warning    ... `[ENABLE]`
 
 ### Downloader Installs
 ---
