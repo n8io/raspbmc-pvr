@@ -147,12 +147,7 @@ _via ssh window_
 		1. This may take a while. (~5min for 1TB)    
 5. Create mount directories for each drive
 	1. `mkdir ~/usb_drives/share`
-	2. `mkdir ~/usb_drives/share/movies`
-	3. `mkdir ~/usb_drives/share/tv`
-	4. `mkdir ~/usb_drives/share/music`
-	5. `mkdir ~/usb_drives/temp`
-    6. `mkdir ~/usb_drives/temp/movies`
-    7. `sudo chmod 777 -R ~/usb_drives`
+	2. `mkdir ~/usb_drives/temp`
 6. Get the unique id for each drive
 	1. `sudo blkid /dev/sda1 -t TYPE=ext3 -sUUID -ovalue`
     2. Copy down the returned value. For reference, we will refer to this valus as `XXXX`.
@@ -166,6 +161,15 @@ _via ssh window_
     3. Hit Ctrl+X
     4. Hit y
     5. Hit Enter 
+10. `sudo reboot`
+11. Wait 2 minutes for everything to cycle
+12. Create media directories
+	1. `mkdir ~/usb_drives/share/tv`
+	2. `mkdir ~/usb_drives/share/music`
+	3. `mkdir ~/usb_drives/share/movies`
+    4. `mkdir ~/usb_drives/temp/movies`
+13. Give full read/write access to `~/usb_drives/*`
+	1.`sudo chmod 777 -R ~/usb_drives`
 
 #### Network Share External USB drive
 _via ssh window_
