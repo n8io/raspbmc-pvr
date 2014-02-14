@@ -26,8 +26,7 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
     5. Plug in power supply.
 3. Wait for Raspbmc to finish network download and initialization (~10-20min)
 4. Using the keyboard, finish any setup steps that you are prompted with.
-5. System -> Settings -> Services ->
-	1. Legend: :large_blue_circle: Enable | :white_circle: Disable
+5. System -> Settings -> Services -> \*
 	1. UPnP
     	1. Share video and music libraries ... :large_blue_circle:
         2. Allow control of XBMC via UPnP  ... :large_blue_circle:
@@ -37,6 +36,8 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
     	1. Allow XBMC to receive AirPlay   ... :large_blue_circle:
 6. Programs -> Raspbmc Settings -> System Configuration
 	1. Disable unsafe shut down warning    ... :large_blue_circle:
+
+* - :large_blue_circle: Enable | :white_circle: Disable
 
 ### Downloader Installs
 ---
