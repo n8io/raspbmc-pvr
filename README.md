@@ -40,7 +40,7 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 ---
 1. System -> System Info
 	1. Make note of your IP address. This will be needed further down
-    2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine over your LAN. 
+    2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine via ssh. 
 2. From your pc, [download and run Putty ssh client](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 	1. When prompted, enter your pi IP address and click Open.
 	2. The default username is: _pi_
