@@ -140,7 +140,7 @@ _via ssh window_
 		1. This may take a while. (~5min for 1TB)    
 5. Create mount directories for each drive
 	1. `mkdir ~/usb_drives/share`
-	2. `mkdir ~/usb_drives/temp`
+	2. `mkdir ~/usb_drives/temp && mkdir ~/usb_drives/temp/movies`
     3. `sudo chmod 777 -R ~/usb_drives`
 6. Get the unique id for each drive
 	1. `sudo blkid /dev/sda1 -t TYPE=ext3 -sUUID -ovalue`
