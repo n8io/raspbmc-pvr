@@ -242,5 +242,8 @@ _via ssh window_
       </videolibrary>
     </advancedsettings>
     ```
+20. Hit Ctrl+X
+21. Hit y
+22. Hit Enter 
 
 *[back to top](#raspbmc-pvr)*
