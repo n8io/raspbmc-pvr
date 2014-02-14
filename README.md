@@ -15,7 +15,6 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 
 ### Raspbmc Install
 ---
-Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
 2. Plug in your pi
