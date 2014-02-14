@@ -5,9 +5,9 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 
 - [Raspbmc Install](#raspbmc-install)
 - [Downloader Installs](#downloader-installs)
-    - [Sickbeard](#sickbeard-installation)
-    - [Couchpotato](#couchpotato-installation)
-    - [Sabnzbd](#sabnzbd-installation)
+    - [Sickbeard](#sickbeard-installation-skip)
+    - [Couchpotato](#couchpotato-installation-skip)
+    - [Sabnzbd](#sabnzbd-installation-skip)
     - [Install Verification](#verify-setup)
 - [Bonus](#bonus)
     - [Mount Two External USB drives](#mount-two-2-external-usb-drives)
@@ -51,7 +51,7 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 	1. `sudo apt-get update -y`
     2. Wait ~5-10min to complete.
     
-#### Sabnzbd installation [skip](#couchpotato-installation)
+#### Sabnzbd installation [skip](#sickbeard-installation-skip)
 _via ssh window_
 
 1. `sudo apt-get install sabnzbdplus`
@@ -66,7 +66,7 @@ _via ssh window_
 7. Hit Enter
 8. Sabnzbd installation complete.
     
-#### Sickbeard installation [skip](#sabnzbd-installation)
+#### Sickbeard installation [skip](#couchpotato-installation-skip)
 _via ssh window_
 
 1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
