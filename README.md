@@ -47,8 +47,12 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
     3. The default password is: _raspberry_
     4. If this is the first time you have ssh'ed into your pi, it will prompt you for some one time setup. Follow the prompts and answer accordingly.
 3. Via ssh window
-	1. `sudo apt-get update -y`
-    2. Wait ~5-10min to complete.
+	1. `echo "deb-src http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi" | sudo tee -a /etc/apt/sources.list`
+	2. `sudo apt-get update -y`    
+    3. Wait ~5-10min to complete.
+    4. `sudo apt-get build-dep unrar-nonfree`
+	5. `sudo apt-get source -b unrar-nonfree`
+	6. `sudo dpkg -i unrar*.deb`
     
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
 _via ssh window_
