@@ -220,6 +220,7 @@ _via ssh window_
 17. `sudo nano ~/.xbmc/userdata/advancedsettings.xml`
 18. The above command opens the advancedsettings.xml file in a command line file editor called nano.
 19. Enter the following lines...
+
 	```xml
     <advancedsettings>
     <videodatabase>
