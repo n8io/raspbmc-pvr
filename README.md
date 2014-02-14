@@ -11,7 +11,7 @@ A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpot
 - [Install Verification](#verify-setup)
 - [Bonus](#bonus)
     - [Mount Two External USB drives](#mount-two-2-external-usb-drives)
-    - [Network Share Two External USB drives](#share-two-2-external-usb-drives)
+    - [Network Share External USB drive](#network-share-external-usb-drive)
 
 ### Raspbmc Install
 ---
@@ -157,7 +157,7 @@ _via ssh window_
     4. Hit y
     5. Hit Enter 
 
-#### Share Two (2) External USB drives
+#### Network Share External USB drive
 _via ssh window_
 
 1. `sudo apt-get install samba -y`
@@ -179,3 +179,5 @@ _via ssh window_
 9. `sudo /etc/init.d/samba restart`
 10. `sudo update-rc.d -f samba remove`
 11. `sudo update-rc.d samba defaults`
+
+*[top](#raspbmc-pvr)*
