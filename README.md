@@ -73,7 +73,9 @@ _via ssh window_
 6. Hit y
 7. Hit Enter
 8. Sabnzbd installation complete.
-    
+
+[More details on Sabnzbd](http://www.sabnzbd.org)
+
 #### Sickbeard installation [skip](#couchpotato-installation-skip)
 _via ssh window_
 
