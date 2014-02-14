@@ -3,6 +3,16 @@ raspbmc-pvr
 
 A bolt on process for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Again, this procedure only **installs** all the apps from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
 
+- [Raspbmc Install](#raspbmc-install)
+- [Downloader Installs](#downloader-installs)
+    - [Sickbeard](#sickbeard-installation)
+    - [Couchpotato](#couchpotato-installation)
+    - [Sabnzbd](#sabnzbd-installation)
+    - [Install Verification](#verify-setup)
+- [Bonus]
+    - [Mount Two External USB drives](#mount-two-2-external-usb-drives)
+    - [Network Share Two External USB drives](#share-two-2-external-usb-drives)
+
 ### Raspbmc Install
 ---
 Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
@@ -41,19 +51,8 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 	1. `sudo apt-get update -y`
     2. Wait ~5-10min to complete.
     
-#### Sickbeard installation (via ssh window) [skip](#sabnzbd-installation-via-ssh-window-skip)
-1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
-2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
-3. `sudo nano /etc/rc.local`
-4. The above command opens the rc.local file in a command line file editor called nano.
-5. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
-1. `python /home/pi/.sickbeard/SickBeard.py -d`
-6. Hit Ctrl+X
-7. Hit y
-8. Hit Enter
-9. Sickbeard installation complete.
-    
-#### Sabnzbd installation (via ssh window) [skip](#couchpotato-installation-via-ssh-window-skip)
+#### Sabnzbd installation [skip](#couchpotato-installation)
+_via ssh window_
 1. `sudo apt-get install sabnzbdplus`
 2. `sudo nano /etc/default/sabnzbdplus`
 3. The above command opens the sabnzbdplus file in a command line file editor called nano.
@@ -66,7 +65,21 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 7. Hit Enter
 8. Sabnzbd installation complete.
     
-#### Couchpotato installation (via ssh window) [skip](#verify-setup)
+#### Sickbeard installation [skip](#sabnzbd-installation)
+_via ssh window_
+1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
+2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
+3. `sudo nano /etc/rc.local`
+4. The above command opens the rc.local file in a command line file editor called nano.
+5. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
+1. `python /home/pi/.sickbeard/SickBeard.py -d`
+6. Hit Ctrl+X
+7. Hit y
+8. Hit Enter
+9. Sickbeard installation complete.
+
+#### Couchpotato installation [skip](#verify-setup)
+_via ssh window_
 1. `git config --global http.sslVerify false`
 2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
 3. `python .couchpotato/CouchPotato.py`
@@ -104,10 +117,11 @@ Already installed? Skip ahead to [Downloader Installs](#downloader-installs).
 
 ### Bonus
 ---
-#### Mount Two (2) External USB drives (via ssh window)
+#### Mount Two (2) External USB drives 
 
 You might ask, 'Why two drives?'. The answer is simple. If you are like me and have multiple media extenders setup around the house, you are going to want to share out your media. With two drives, this makes it easy for one drive to be dedicated to preprocessing, downloading, and post processing (writing) your media while the second is dedicated to streaming (reading) your media. It helps prevent juttering during playback while your pi processes downloaded media.
 
+_via ssh window_
 1. Plug in both USB drives
 2. `sudo fdisk -l`
 	1. The above command will list out your drives
@@ -139,7 +153,9 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     4. Hit y
     5. Hit Enter 
 
-#### Share Two (2) External USB drives (via ssh window)
+#### Share Two (2) External USB drives
+
+_via ssh window_
 1. `sudo apt-get install samba -y`
 2. `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 3. `sudo nano /etc/samba/smb.conf`
