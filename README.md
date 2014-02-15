@@ -136,6 +136,8 @@ _via ssh window_
 ---
 #### Mount Two (2) External USB drives 
 
+_Total Time: ~30min_
+
 You might ask, 'Why two drives?'. The answer is simple. If you are like me and have multiple media extenders setup around the house, you are going to want to share out your media. With two drives, this makes it easy for one drive to be dedicated to preprocessing, downloading, and post processing (writing) your media while the second is dedicated to streaming (reading) your media. It helps prevent juttering during playback while your pi processes downloaded media.
 
 _via ssh window_
@@ -150,9 +152,9 @@ _via ssh window_
     2. `sudo umount /dev/sdb1`
 4. Format the drives
 	1. `sudo mkfs.ext3 /dev/sda1`
-    	1. This may take a while. (~5min for 1TB)
+    	1. This may take a while. (~10min for 1TB)
     2. `sudo mkfs.ext3 /dev/sdb1`
-		1. This may take a while. (~5min for 1TB)    
+		1. This may take a while. (~10min for 1TB)    
 5. Create mount directories for each drive
 	1. `mkdir ~/usb_drives/share`
 	2. `mkdir ~/usb_drives/temp`
