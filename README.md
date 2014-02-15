@@ -206,7 +206,7 @@ _Total Time: 5min_
 2. `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 3. `sudo nano /etc/samba/smb.conf`
 4. The above command opens the smb.conf file in a command line file editor called nano.
-5. Underneath the `[global]` section, update to match...
+5. Underneath the `[global]` section, update these 2 lines to match...
 
 	```
     [gobal]
