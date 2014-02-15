@@ -42,6 +42,7 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
 ### Downloader Installs
 ---
 _Total Time: ~15min_
+
 1. From your pi, System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine via ssh. 
