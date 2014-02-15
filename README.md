@@ -206,13 +206,18 @@ _Total Time: 5min_
 2. `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 3. `sudo nano /etc/samba/smb.conf`
 4. The above command opens the smb.conf file in a command line file editor called nano.
+5. Underneath the `[global]` section...
+	```
+    [gobal]
+      security=share
+      #security=user
+    ```
 5. At the end of the file enter the following lines...
 
-	```xml
+	```    
     [share]
         comment = Shared Folder
     	path = /home/pi/usb_drives/share
-    	public = yes
     	guest ok = yes
     	guest account = pi
     	writable = yes
