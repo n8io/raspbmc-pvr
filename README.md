@@ -16,17 +16,23 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
 
 ### Raspbmc Install
 ---
+_Total Time: ~15min_
+
+**via pc**
 
 1. [Download and install](http://www.raspbmc.com/download/) Raspbmc on your pi sd card.
-2. Plug in your pi
+
+**via pi**
+
+1. Plug in your pi
 	1. Insert SD card.
 	2. Plug in a keyboard via usb.
 	3. Plug in ethernet for internet access.
     4. Attach video to monitor or tv.
     5. Plug in power supply.
-3. Wait for Raspbmc to finish network download and initialization (~10-20min)
-4. Using the keyboard, finish any setup steps that you are prompted with.
-5. System -> Settings -> Services -> 
+2. Wait for Raspbmc to finish network download and initialization (~10-20min)
+3. Using the keyboard, finish any setup steps that you are prompted with.
+4. System -> Settings -> Services -> 
 	1. UPnP
     	1. Share video and music libraries ... :large_blue_circle:
         2. Allow control of XBMC via UPnP  ... :large_blue_circle:
@@ -34,7 +40,7 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
     	1. Allow programs on other systems ... :large_blue_circle:
     3. AirPlay
     	1. Allow XBMC to receive AirPlay   ... :large_blue_circle:
-6. Programs -> Raspbmc Settings -> System Configuration
+5. Programs -> Raspbmc Settings -> System Configuration
 	1. Disable unsafe shut down warning    ... :large_blue_circle:
 
 :large_blue_circle: Enable :white_circle: Disable
@@ -64,7 +70,7 @@ _Total Time: ~15min_
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
 _Total Time: ~5min_
 
-_via ssh window_
+**via ssh window**
 
 1. `sudo apt-get install sabnzbdplus`
 2. `sudo nano /etc/default/sabnzbdplus`
@@ -83,7 +89,7 @@ _via ssh window_
 #### Sickbeard installation [skip](#couchpotato-installation-skip)
 _Total Time: ~5min_
 
-_via ssh window_
+**via ssh window**
 
 1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
 2. `git clone git://github.com/midgetspy/Sick-Beard.git .sickbeard`
@@ -101,7 +107,7 @@ _via ssh window_
 #### Couchpotato installation [skip](#verify-setup)
 _Total Time: ~5min_
 
-_via ssh window_
+**via ssh window**
 
 1. `git config --global http.sslVerify false`
 2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
@@ -146,12 +152,11 @@ _via ssh window_
 ### Bonus
 ---
 #### Mount Two (2) External USB drives 
-
 _Total Time: ~30min_
 
 You might ask, 'Why two drives?'. The answer is simple. If you are like me and have multiple media extenders setup around the house, you are going to want to share out your media. With two drives, this makes it easy for one drive to be dedicated to preprocessing, downloading, and post processing (writing) your media while the second is dedicated to streaming (reading) your media. It helps prevent juttering during playback while your pi processes downloaded media.
 
-_via ssh window_
+**via ssh window**
 
 1. Plug in both USB drives
 2. `sudo fdisk -l`
@@ -193,10 +198,9 @@ _via ssh window_
 	1. `sudo chmod -R a+rwx ~/usb_drives`
 
 #### Network Share External USB drive
-
 _Total Time: 5min_
 
-_via ssh window_
+**via ssh window**
 
 1. `sudo apt-get install samba -y`
 2. `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
@@ -226,7 +230,7 @@ _via ssh window_
 #### Shared XBMC library
 _Total Time: ~10min_
 
-*via ssh window*
+**via ssh window**
 
 1. `sudo apt-get install mysql-server -y`
 2. You will be prompted to enter a MySQL "root" user pwd...
