@@ -210,15 +210,15 @@ _Total Time: 5min_
 
 	```xml
     [share]
-    comment = Shared Folder
-    path = /home/pi/usb_drives/share
-    public = yes
-    guest ok = yes
-    guest account = pi
-    writable = yes
-    available = yes
-    create mask = 777
-    directory mask = 777
+        comment = Shared Folder
+    	path = /home/pi/usb_drives/share
+    	public = yes
+    	guest ok = yes
+    	guest account = pi
+    	writable = yes
+    	available = yes
+    	create mask = 777
+    	directory mask = 777
     ```
 6. Hit Ctrl+X
 7. Hit y
