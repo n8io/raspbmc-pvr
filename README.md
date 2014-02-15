@@ -41,6 +41,7 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
 
 ### Downloader Installs
 ---
+_Total Time: ~15min_
 1. From your pi, System -> System Info
 	1. Make note of your IP address. This will be needed further down
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine via ssh. 
@@ -60,6 +61,8 @@ A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Ag
 	6. `sudo dpkg -i unrar*.deb`
     
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
+_Total Time: ~5min_
+
 _via ssh window_
 
 1. `sudo apt-get install sabnzbdplus`
