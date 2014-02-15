@@ -24,7 +24,7 @@ _Total Time: ~15min_
 
 **via pi**
 
-1. Plug in your pi
+1. Ready your pi for first boot...
 	1. Insert SD card.
 	2. Plug in a keyboard via usb.
 	3. Plug in ethernet for internet access.
