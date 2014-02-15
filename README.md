@@ -224,6 +224,8 @@ _via ssh window_
 11. `sudo update-rc.d samba defaults`
 
 #### Shared XBMC library
+_Total Time: ~10min_
+
 _via ssh window_
 
 1. `sudo apt-get install mysql-server -y`
