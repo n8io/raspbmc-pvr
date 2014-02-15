@@ -77,6 +77,8 @@ _via ssh window_
 [More details on Sabnzbd](http://www.sabnzbd.org)
 
 #### Sickbeard installation [skip](#couchpotato-installation-skip)
+_Total Time: ~5min_
+
 _via ssh window_
 
 1. `sudo apt-get install python-cheetah git git-core transmission-daemon -y`
