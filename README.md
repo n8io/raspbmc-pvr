@@ -190,10 +190,10 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 10. `sudo reboot`
 11. Wait 2 minutes for everything to cycle
 12. Create media directories
-	1. `mkdir ~/usb_drives/share/tv`
-	2. `mkdir ~/usb_drives/share/music`
-	3. `mkdir ~/usb_drives/share/movies`
-    4. `mkdir ~/usb_drives/temp/movies`
+	1. `sudo mkdir ~/usb_drives/share/tv`
+	2. `sudo mkdir ~/usb_drives/share/music`
+	3. `sudo mkdir ~/usb_drives/share/movies`
+    4. `sudo mkdir ~/usb_drives/temp/movies`
 13. Give full read/write access to `~/usb_drives`
 	1. `sudo chmod -R a+rwx ~/usb_drives`
 
