@@ -105,7 +105,8 @@ _via ssh window_
 6. `sudo nano /etc/init.d/couchpotato`
 7. The above command opens the couchpotato file in a command line file editor called nano.
 8. Update to match the following...
-	```
+	
+    ```
 	RUN_AS=${CP_USER-pi}
 	APP_PATH=${CP_HOME-/home/pi/.couchpotato/}
 	DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}
