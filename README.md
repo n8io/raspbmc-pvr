@@ -93,7 +93,7 @@ _via ssh window_
 [More details on Sickbeard](http://sickbeard.com/)
 
 #### Couchpotato installation [skip](#verify-setup)
-_Total Time: ~30min_
+_Total Time: ~5min_
 
 _via ssh window_
 
