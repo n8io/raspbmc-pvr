@@ -93,6 +93,8 @@ _via ssh window_
 [More details on Sickbeard](http://sickbeard.com/)
 
 #### Couchpotato installation [skip](#verify-setup)
+_Total Time: ~30min_
+
 _via ssh window_
 
 1. `git config --global http.sslVerify false`
@@ -103,10 +105,12 @@ _via ssh window_
 6. `sudo nano /etc/init.d/couchpotato`
 7. The above command opens the couchpotato file in a command line file editor called nano.
 8. Update to match the following...
-	1. `RUN_AS=${CP_USER-pi}`
-	2. `APP_PATH=${CP_HOME-/home/pi/.couchpotato/}`
-	3. `DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}`
-	4. `PID_FILE=${CP_PIDFILE-/home/pi/.couchpotato/run/couchpotato.pid}`
+	```
+	RUN_AS=${CP_USER-pi}
+	APP_PATH=${CP_HOME-/home/pi/.couchpotato/}
+	DATA_DIR=${CP_DATA-/home/pi/.couchpotato/data}
+	PID_FILE=${CP_PIDFILE-/home/pi/.couchpotato/run/couchpotato.pid}
+    ```
 9. Hit Ctrl+X
 10. Hit y
 11. Hit Enter    
