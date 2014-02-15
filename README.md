@@ -226,7 +226,7 @@ _via ssh window_
 #### Shared XBMC library
 _Total Time: ~10min_
 
-*via ssh window*
+**via ssh window**
 
 1. `sudo apt-get install mysql-server -y`
 2. You will be prompted to enter a MySQL "root" user pwd...
