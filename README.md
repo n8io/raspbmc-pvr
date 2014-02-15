@@ -207,6 +207,7 @@ _Total Time: 5min_
 3. `sudo nano /etc/samba/smb.conf`
 4. The above command opens the smb.conf file in a command line file editor called nano.
 5. Underneath the `[global]` section...
+
 	```
     [gobal]
       security=share
