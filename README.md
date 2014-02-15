@@ -182,6 +182,9 @@ _via ssh window_
 	1. `sudo chmod -R a+rwx ~/usb_drives`
 
 #### Network Share External USB drive
+
+_Total Time: 5min_
+
 _via ssh window_
 
 1. `sudo apt-get install samba -y`
