@@ -189,7 +189,7 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     5. Hit Enter 
 10. `sudo reboot`
 11. Wait 2 minutes for everything to cycle
-12. Verify everything mounted correctly.
+12. Verify everything mounted correctly...
 	1. `df -H`
     2. You should see your drives mounted and in their respective 'Mounted on' directories.
 12. Create media directories
