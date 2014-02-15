@@ -189,6 +189,9 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     5. Hit Enter 
 10. `sudo reboot`
 11. Wait 2 minutes for everything to cycle
+12. Verify everything mounted correctly.
+	1. `df -H`
+    2. You should see your drives mounted and in their respective 'Mounted on' directories.
 12. Create media directories
 	1. `sudo mkdir ~/usb_drives/share/tv`
 	2. `sudo mkdir ~/usb_drives/share/music`
@@ -213,7 +216,7 @@ _Total Time: 5min_
       security=share
       #security=user
     ```
-5. At the end of the file enter the following lines...
+6. At the end of the file enter the following lines...
 
 	```    
     [share]
@@ -226,12 +229,12 @@ _Total Time: 5min_
     	create mask = 777
     	directory mask = 777
     ```
-6. Hit Ctrl+X
-7. Hit y
-8. Hit Enter 
-9. `sudo /etc/init.d/samba restart`
-10. `sudo update-rc.d -f samba remove`
-11. `sudo update-rc.d samba defaults`
+7. Hit Ctrl+X
+8. Hit y
+9. Hit Enter 
+10. `sudo /etc/init.d/samba restart`
+11. `sudo update-rc.d -f samba remove`
+12. `sudo update-rc.d samba defaults`
 
 #### Shared XBMC library
 _Total Time: ~10min_
