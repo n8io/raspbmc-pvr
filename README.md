@@ -54,18 +54,12 @@ _Total Time: ~15min_
     2. At this point, you will no longer need direct access to your pi. The following will be done from a seperate machine via ssh. 
 2. From your pc, [download and run Putty ssh client](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 	1. When prompted, enter your pi IP address and click Open.
-	2. The default username is: _pi_
-    3. The default password is: _raspberry_
+	2. The default username is: `pi`
+    3. The default password is: `raspberry`
     4. If this is the first time you have ssh'ed into your pi, it will prompt you for some one time setup. Follow the prompts and answer accordingly.
 3. Via ssh window
-	1. `echo "deb-src http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi" | sudo tee -a /etc/apt/sources.list`
-	2. `sudo apt-get update -y`    
-    3. Wait ~10min to complete.
-    4. `sudo apt-get build-dep unrar-nonfree -y`  
-    5. Wait ~10min to complete.
-	6. `sudo apt-get source -b unrar-nonfree -y`  
-    7. Wait ~10min to complete.
-	6. `sudo dpkg -i unrar*.deb`
+	1. ``sudo apt-get update -y`    
+    2. `sudo apt-get install unrar par2 -y`  
     
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
 _Total Time: ~5min_
