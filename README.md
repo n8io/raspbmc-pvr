@@ -190,7 +190,8 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
 	1. `sudo mkdir ~/usb_drives/share/tv`
 	2. `sudo mkdir ~/usb_drives/share/music`
 	3. `sudo mkdir ~/usb_drives/share/movies`
-    4. `sudo mkdir ~/usb_drives/temp/movies`
+    4. `sudo mkdir ~/usb_drives/temp/incomplete`
+    5. `sudo mkdir ~/usb_drives/temp/complete`
 13. Give full read/write access to `~/usb_drives`
 	1. `sudo chmod -R a+rwx ~/usb_drives`
 
