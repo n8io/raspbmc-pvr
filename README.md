@@ -1,7 +1,7 @@
 raspbmc-pvr
 ===========
 
-A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Again, this procedure only **installs** all the apps from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective web apps.
+A tutorial for Raspbmc that **installs** Sabnzbd, Sickbeard, and Couchpotato. Again, this procedure only **installs** all the apps from their Github repositories. Once the apps are running, it is up to you to configure them properly from their respective [web apps](#verify-setup).
 
 - [Raspbmc Install](#raspbmc-install)
 - [Downloader Installs](#downloader-installs)
