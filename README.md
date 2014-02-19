@@ -207,7 +207,7 @@ _Total Time: 5min_
 5. Underneath the `[global]` section, update these 2 lines to match...
 
 	```
-    [gobal]
+    [global]
       security=share
       #security=user
     ```
