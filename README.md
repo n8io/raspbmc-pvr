@@ -166,8 +166,8 @@ You might ask, 'Why two drives?'. The answer is simple. If you are like me and h
     2. `sudo mkfs.ext3 /dev/sdb1`
 		1. This may take a while. (~10min for 1TB)    
 5. Create mount directories for each drive
-	1. `mkdir ~/usb_drives/share`
-	2. `mkdir ~/usb_drives/temp`
+	1. `mkdir -p ~/usb_drives/share`
+	2. `mkdir -p ~/usb_drives/temp`
 6. Get the unique id for each drive
 	1. `sudo blkid /dev/sda1 -t TYPE=ext3 -sUUID -ovalue`
     2. Copy down the returned value. For reference, we will refer to this valus as `XXXX`.
