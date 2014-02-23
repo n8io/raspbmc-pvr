@@ -105,7 +105,7 @@ _Total Time: ~5min_
 
 1. `git config --global http.sslVerify false`
 2. `git clone https://github.com/RuudBurger/CouchPotatoServer.git .couchpotato`
-3. `python .couchpotato/CouchPotato.py`
+3. `python .couchpotato/CouchPotato.py &`
 4. `sudo cp .couchpotato/init/ubuntu /etc/init.d/couchpotato`    
 5. `mkdir .couchpotato/data && mkdir .couchpotato/run`
 6. `sudo nano /etc/init.d/couchpotato`
