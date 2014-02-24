@@ -59,7 +59,7 @@ _Total Time: ~15min_
     4. If this is the first time you have ssh'ed into your pi, it will prompt you for some one time setup. Follow the prompts and answer accordingly.
 3. Via ssh window
 	1. `sudo apt-get update -y`    
-    2. `sudo apt-get install unrar par2 -y`  
+    2. `sudo apt-get install par2 rar unrar zip unzip p7zip-full -y`  
     
 #### Sabnzbd installation [skip](#sickbeard-installation-skip)
 _Total Time: ~5min_
