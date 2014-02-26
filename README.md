@@ -126,7 +126,7 @@ _Total Time: ~5min_
 14. `sudo nano /etc/rc.local`
 15. The above command opens the rc.local file in a command line file editor called nano.
 16. From there, you should enter the following line ABOVE the last line in the file (`exit 0`):
-	1. `sudo service sabnzbdplus start &`
+	1. `sudo service couchpotato start &`
 17. Hit Ctrl+X
 18. Hit y
 19. Hit Enter
